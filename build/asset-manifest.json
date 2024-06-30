@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pmanapuri/static/css/main.72fc69a0.css",
+    "main.js": "/pmanapuri/static/js/main.dc35f933.js",
+    "static/js/453.253ccfac.chunk.js": "/pmanapuri/static/js/453.253ccfac.chunk.js",
+    "index.html": "/pmanapuri/index.html",
+    "main.72fc69a0.css.map": "/pmanapuri/static/css/main.72fc69a0.css.map",
+    "main.dc35f933.js.map": "/pmanapuri/static/js/main.dc35f933.js.map",
+    "453.253ccfac.chunk.js.map": "/pmanapuri/static/js/453.253ccfac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72fc69a0.css",
+    "static/js/main.dc35f933.js"
+  ]
+}
