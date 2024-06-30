@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { ReactTyped } from "react-typed";
 
 const HeaderContainer = styled(motion.div)`
   display: flex;
@@ -18,15 +19,15 @@ const Name = styled(motion.h1)`
 
 const headerVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2, ease: "easeInOut" } },
-  exit: { opacity: 0, transition: { duration: 1, ease: "easeInOut" } },
+  visible: { opacity: 1, transition: { duration: 1.5, ease: "easeInOut" } },
+  exit: { opacity: 0, transition: { duration: 1.5, ease: "easeInOut" } },
 };
 
 const Header = ({ onAnimationComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onAnimationComplete();
-    }, 3000); 
+    }, 3500); // Adjust the duration as needed
 
     return () => clearTimeout(timer);
   }, [onAnimationComplete]);
@@ -38,8 +39,13 @@ const Header = ({ onAnimationComplete }) => {
       exit="exit"
       variants={headerVariants}
     >
-      <Name animate={{ y: [0, -30, 0] }} transition={{ duration: 1.5, yoyo: Infinity }}>
-        Preetham Manapuri
+      <Name>
+        <ReactTyped
+          strings={["Hi. I'm Preetham Manapuri"]}
+          typeSpeed={40}
+          backSpeed={50}
+          loop={false}
+        />
       </Name>
     </HeaderContainer>
   );

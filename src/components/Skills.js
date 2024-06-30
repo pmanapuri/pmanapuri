@@ -17,6 +17,11 @@ const Skill = styled(motion.div)`
   padding: 10px;
   border: 2px solid red;
   border-radius: 10px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 const skills = ['React', 'JavaScript', 'CSS', 'HTML', 'Node.js'];
@@ -27,7 +32,7 @@ const Skills = () => {
       <SkillsContainer initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <h2>My Skills</h2>
         {skills.map(skill => (
-          <Skill key={skill} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Skill key={skill}>
             {skill}
           </Skill>
         ))}

@@ -16,7 +16,7 @@ const Contact = () => {
     <Element name="contact">
       <ContactContainer initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email at <a href="mailto:mpreetham@cmu.edu" style={{ color: 'red' }}>you@example.com</a></p>
+        <p>Feel free to reach out to me via email at <a href="mailto:mpreetham@cmu.edu" style={{ color: 'red' }}>mpreetham@cmu.edu</a></p>
       </ContactContainer>
     </Element>
   );

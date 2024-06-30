@@ -1,5 +1,6 @@
 // src/styles.js
 import { createGlobalStyle } from 'styled-components';
+import '@fontsource/roboto';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -8,7 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background: black;
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: red;
   }
 
   a {
