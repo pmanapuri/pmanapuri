@@ -45,7 +45,7 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'black', color: 'white' }}
           contentArrowStyle={{ borderRight: '7px solid black' }}
-          date="2020 - 2021"
+          date="2021-Present"
           iconStyle={{ background: 'red', color: '#fff' }}
           icon={<FaHandsHelping />}
         >
