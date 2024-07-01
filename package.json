@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://pmanapuri.github.io/pmanapuri/",
+  "homepage": "https://pmanapuri.github.io",
   "private": false,
   "dependencies": {
     "@fontsource/roboto": "^5.0.13",
